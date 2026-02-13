@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            background-color: rgba(67, 164, 158, 0.882);
+        }
+
+
+
+
+        .box {
+            background-color: rgb(63, 135, 168);
+            color: white;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            margin: 5px 0 10px 0;
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <form action="StudentRegistrationForm">
+
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" placeholder="Enter Name" required>
+
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" placeholder="Enter Father's Name" required>
+
+            <label>Date Of Birth:</label>
+            <input type="number" placeholder="Day" min="1" max="31" required>
+            <input type="number" placeholder="Month" min="1" max="12" required>
+            <input type="number" placeholder="Year" min="1500" max="2026" required>
+
+            <label for="phone">Mobile Number:</label>
+            <select name="countryCode">
+                <option value="+91">🇮🇳 +91 (India)</option>
+                <option value="+1">🇺🇸 +1 (USA)</option>
+                <option value="+44">🇬🇧 +44 (UK)</option>
+                <option value="+61">🇦🇺 +61 (Australia)</option>
+            </select>
+
+            <input type="tel" name="mobile" placeholder="Enter mobile number" pattern="[0-9]{6,14}" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email id" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+
+            <br><br>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="cse">Computer Science</option>
+                <option value="ece">Electronics</option>
+                <option value="me">Mechanical</option>
+                <option value="ce">Civil</option>
+            </select>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="btech">B.Tech</option>
+                <option value="bca">BCA</option>
+                <option value="mtech">M.Tech</option>
+                <option value="mca">MCA</option>
+            </select>
+
+            <label for="city">City:</label>
+            <select id="city" name="city" required>
+                <option value="">Select City</option>
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="lucknow">Lucknow</option>
+                <option value="jaipur">Jaipur</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your full address" required></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
