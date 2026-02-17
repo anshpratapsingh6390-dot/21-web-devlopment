@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+</head>
+
+<body>
+
+    <h1>Travel Reservation Form </h1>
+
+
+    <div>
+        <label for="Name">Name:</label required>
+        <input type="text" required>
+    </div>
+    <br>
+    <div>
+
+        <label>Date Of Birth:</label>
+        <input type="number" placeholder="Day" min="1" max="31" required>
+        <input type="number" placeholder="Month" min="1" max="12" required>
+        <input type="number" placeholder="Year" min="1500" max="2026" required>
+    </div>
+    <br>
+    <div>
+        <label for="phone">Mobile Number:</label>
+        <select name="countryCode">
+            <option value="+91">🇮🇳 +91 (India)</option>
+            <option value="+1">🇺🇸 +1 (USA)</option>
+            <option value="+44">🇬🇧 +44 (UK)</option>
+            <option value="+61">🇦🇺 +61 (Australia)</option>
+        </select>
+        <input type="tel" name="mobile" placeholder="Enter mobile number" pattern="[0-9]{6,14}" required>
+
+    </div>
+    <br>
+
+
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your Email id" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+    <div>
+        <br>
+        <div>
+
+
+            <label for="regDate">Date of Registration:</label>
+            <input type="date" id="regDate" name="regDate" required>
+            <br>
+            <br>
+            <label for="travelDate">Till Date of Travel:</label>
+            <input type="date" id="travelDate" name="travelDate" required>
+
+        </div>
+
+        <a href="tel:9876543210">
+            <button>Call Now </button>
+        </a>
+
+    </div>
+    <br>
+    <button>Clear</button>
+
+
+</body>
+
+</html>
